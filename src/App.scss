@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: radial-gradient(circle at center, #0A1828, #000);
+  background-attachment: fixed;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  section{
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+}

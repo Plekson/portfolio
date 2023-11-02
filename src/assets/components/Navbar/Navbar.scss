@@ -1,0 +1,23 @@
+.navbar {
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  height: 100px;
+
+  span{
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .links {
+    display: flex;
+    gap: 20px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+  }
+}
