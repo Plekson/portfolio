@@ -22,13 +22,37 @@ body {
   }
 
   section {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: center;
   }
 
-  .scrollIcon {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
+  h1 {
+    font-size: 72px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .underline {
+    height: 4px;
+    background-color: #bfa181;
   }
 }

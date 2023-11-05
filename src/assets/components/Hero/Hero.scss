@@ -2,8 +2,21 @@
   max-width: 1366px;
   margin: 0 auto;
   height: calc(100vh - 100px);
+  padding-bottom: 100px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  h2 {
+    color: #bfa181;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
 
   .heroImage {
     height: 100%;
@@ -13,28 +26,6 @@
     img {
       height: 75%;
       width: auto;
-    }
-  }
-
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    height: 100%;
-
-    h2 {
-      font-size: 48px;
-      color: #bfa181;
-    }
-
-    h1 {
-      font-size: 72px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 20px;
     }
   }
 }

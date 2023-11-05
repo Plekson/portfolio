@@ -1,0 +1,61 @@
+.about {
+  padding: 24px;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  .description {
+    display: flex;
+    align-items: center;
+
+    .desc-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+
+      span {
+        color: #bfa181;
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
+
+    .desc-image {
+      width: 50%;
+      text-align: right;
+
+      img {
+        width: 75%;
+        height: auto;
+      }
+    }
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .techstack {
+      display: flex;
+      gap: 20px;
+
+      .tech {
+        text-align: center;
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
