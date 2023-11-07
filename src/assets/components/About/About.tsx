@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./About.scss";
 import {
   fadeInX200Variants,
-  fadeInX500Variants,
+  fadeInNX500Variants,
   fadeInYVariants,
   opacityEffect,
 } from "../../variants.ts";
@@ -42,12 +42,12 @@ const Skills = () => {
           className="desc-text"
           initial="initial"
           whileInView="animate"
-          variants={fadeInX500Variants}
+          variants={fadeInNX500Variants}
         >
-          <motion.h4 variants={fadeInX500Variants}>
+          <motion.h4 variants={fadeInNX500Variants}>
             Hello, I am <span>Piotr!</span>
           </motion.h4>
-          <motion.p variants={fadeInX500Variants}>
+          <motion.p variants={fadeInNX500Variants}>
             A passionate and dedicated Junior Front-End Developer. I specialize
             in creating responsive and aesthetically pleasing websites that
             seamlessly blend design and functionality. I take pride in

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Btn.scss";
 import { motion } from "framer-motion";
 

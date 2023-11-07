@@ -27,9 +27,25 @@ export const fadeInX200Variants = {
   },
 };
 
-export const fadeInX500Variants = {
+export const fadeInNX500Variants = {
   initial: {
     x: -500,
+    opacity: 0,
+  },
+
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+export const fadeInX500Variants = {
+  initial: {
+    x: 500,
     opacity: 0,
   },
 
@@ -50,7 +66,7 @@ export const opacityEffect = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1.5,
     },
   },
 };
