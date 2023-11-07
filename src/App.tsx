@@ -4,6 +4,7 @@ import Hero from "./assets/components/Hero/Hero";
 import Navbar from "./assets/components/Navbar/Navbar";
 import Skills from "./assets/components/About/About";
 import Projects from "./assets/components/Projects/Projects";
+import Contact from "./assets/components/Contact/Contact";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
       <section>
         <Projects />
       </section>
-      <section>Elo</section>
+      <section>
+        <Contact />
+      </section>
     </div>
   );
 }

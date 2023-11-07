@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import "./About.scss";
-import { fadeInXVariants, fadeInYVariants } from "../../variants.ts";
+import {
+  fadeInX200Variants,
+  fadeInX500Variants,
+  fadeInYVariants,
+  opacityEffect,
+} from "../../variants.ts";
 
 const data = [
   { id: 0, name: "React", icon: "react.svg" },
@@ -17,42 +22,59 @@ const Skills = () => {
   return (
     <div className="about">
       <div className="title">
-        <h3>About me</h3>
+        <motion.h3
+          initial="initial"
+          whileInView="animate"
+          variants={opacityEffect}
+        >
+          About me
+        </motion.h3>
         <motion.div
           initial="initial"
           whileInView="animate"
-          variants={fadeInXVariants}
-          viewport={{ once: true }}
+          variants={fadeInX200Variants}
           className="underline"
         ></motion.div>
       </div>
 
       <div className="description">
-        <div className="desc-text">
-          <h4>
+        <motion.div
+          className="desc-text"
+          initial="initial"
+          whileInView="animate"
+          variants={fadeInX500Variants}
+        >
+          <motion.h4 variants={fadeInX500Variants}>
             Hello, I am <span>Piotr!</span>
-          </h4>
-          <motion.p
-            initial="initial"
-            whileInView="animate"
-            variants={fadeInXVariants}
-            viewport={{ once: true }}
-          >
+          </motion.h4>
+          <motion.p variants={fadeInX500Variants}>
             A passionate and dedicated Junior Front-End Developer. I specialize
             in creating responsive and aesthetically pleasing websites that
             seamlessly blend design and functionality. I take pride in
             maintaining high-quality code and staying up-to-date with the latest
             web development standards.
           </motion.p>
-        </div>
+        </motion.div>
 
         <div className="desc-image">
-          <img src="laptop.png" alt="laptop" />
+          <motion.img
+            src="laptop.png"
+            alt="laptop"
+            initial="initial"
+            whileInView="animate"
+            variants={opacityEffect}
+          />
         </div>
       </div>
 
       <div className="technologies">
-        <h4>Tech stack I use</h4>
+        <motion.h4
+          initial="initial"
+          whileInView="animate"
+          variants={opacityEffect}
+        >
+          Tech stack I use
+        </motion.h4>
         <div className="techstack">
           {data.map((skill, index) => (
             <motion.div
@@ -61,7 +83,6 @@ const Skills = () => {
               variants={fadeInYVariants}
               initial="initial"
               whileInView="animate"
-              viewport={{ once: true }}
               custom={index}
             >
               <img src={skill.icon} alt={skill.name} />

@@ -1,18 +1,17 @@
 import { motion } from "framer-motion";
-import "./Projects.scss";
 import { opacityEffect, fadeInX200Variants } from "../../variants";
-import HorizontalScrollCarousel from "./CardsGallery/CardsGallery";
+import "./Contact.scss";
 
-const Example = () => {
+const Contact = () => {
   return (
-    <div className="projects" id="projects">
+    <div id="contact" className="contact">
       <div className="title-container">
         <motion.h3
           initial="initial"
           whileInView="animate"
           variants={opacityEffect}
         >
-          Projects
+          Contact
           <motion.div
             initial="initial"
             whileInView="animate"
@@ -21,9 +20,8 @@ const Example = () => {
           ></motion.div>
         </motion.h3>
       </div>
-      <HorizontalScrollCarousel />
     </div>
   );
 };
 
-export default Example;
+export default Contact;
