@@ -7,11 +7,11 @@
   align-items: center;
   gap: 40px;
 
-  .description {
+  .about__description {
     display: flex;
     align-items: center;
 
-    .desc-text {
+    .about__desc-text {
       width: 50%;
       display: flex;
       flex-direction: column;
@@ -27,7 +27,7 @@
       }
     }
 
-    .desc-image {
+    .about__desc-image {
       width: 50%;
       text-align: right;
 
@@ -38,17 +38,17 @@
     }
   }
 
-  .technologies {
+  .about__technologies {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 
-    .techstack {
+    .about__techstack {
       display: flex;
       gap: 20px;
 
-      .tech {
+      .about__tech {
         text-align: center;
 
         img {

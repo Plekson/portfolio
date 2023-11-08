@@ -5,7 +5,7 @@ import {
   fadeInX200Variants,
   fadeInX500Variants,
   fadeInNX500Variants,
-} from "../../variants";
+} from "../../data/variants";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -56,7 +56,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="contact">
-      <div className="title-container">
+      <div className="contact__title">
         <motion.h3
           initial="initial"
           whileInView="animate"
@@ -71,24 +71,27 @@ const Contact = () => {
           ></motion.div>
         </motion.h3>
       </div>
-      <div className="contact-content">
+      <div className="contact__content">
         <motion.form
           action="https://formkeep.com/f/8be7ee9fa959"
           acceptCharset="UTF-8"
           encType="multipart/form-data"
           method="POST"
-          className="contact-form"
+          className="contact__form"
           ref={form}
           onSubmit={sendEmail}
           initial="initial"
           whileInView="animate"
           variants={fadeInX500Variants}
         >
-          <motion.div className="form-flex" variants={fadeInX500Variants}>
+          <motion.div
+            className="contact__form-flex"
+            variants={fadeInX500Variants}
+          >
             <input
               type="text"
               name="user_name"
-              className="name"
+              className="contact__form-name"
               id="name"
               placeholder="Name"
               required={true}
@@ -99,7 +102,7 @@ const Contact = () => {
             <input
               type="email"
               name="user_email"
-              className="email"
+              className="contact__form-email"
               id="email"
               placeholder="Email"
               required={true}
@@ -120,18 +123,18 @@ const Contact = () => {
             value={formValues.message}
             onChange={handleInputChange}
           ></motion.textarea>
-          <motion.div className="form-submit">
+          <motion.div className="contact__form-submit">
             <motion.input
               whileHover={{ backgroundColor: "#BFA181", color: "#000" }}
               type="submit"
               value="Send"
-              className="send"
+              className="contact__form-send"
             />
           </motion.div>
         </motion.form>
 
         <motion.div
-          className="contact-info"
+          className="contact__contact-info"
           initial="initial"
           whileInView="animate"
           variants={fadeInNX500Variants}

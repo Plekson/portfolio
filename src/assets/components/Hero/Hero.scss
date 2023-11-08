@@ -13,19 +13,8 @@
     color: #bfa181;
   }
 
-  .buttons {
+  .hero__buttons {
     display: flex;
     gap: 20px;
-  }
-
-  .heroImage {
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    img {
-      height: 75%;
-      width: auto;
-    }
   }
 }

@@ -1,23 +1,18 @@
-import React from 'react'
-import "./Navbar.scss"
-import IconLink from '../IconLink/IconLink'
-
-const linksImage = [
-  {name: "github", image: "github.png"},
-  {name: "linkedin", image: "linkedin.png"}
-]
+import "./Navbar.scss";
+import IconLink from "../IconLink/IconLink";
+import { linksImage } from "../../data/links";
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-        <span>Plekson</span>
-        <div className='links'>
-            {linksImage.map((link) =>(
-              <IconLink key={link.name} linkImage={link.image}/>
-            ))}
-        </div>
+    <div className="navbar">
+      <span>Plekson</span>
+      <div className="navbar__links">
+        {linksImage.map((link) => (
+          <IconLink key={link.name} linkImage={link.image} />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

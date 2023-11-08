@@ -1,8 +1,8 @@
-.scroll-section {
+.gallery {
   position: relative;
   height: 300vh;
 
-  .sticky-container {
+  .gallery__sticky {
     position: sticky;
     top: 0;
     display: flex;
@@ -10,7 +10,7 @@
     overflow: hidden;
     height: 100vh;
 
-    .flex-container {
+    .gallery__flex {
       display: flex;
       gap: 24px;
     }

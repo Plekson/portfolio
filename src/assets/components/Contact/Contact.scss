@@ -8,14 +8,14 @@
   align-items: center;
   gap: 40px;
 
-  .contact-content {
+  .contact__content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     width: 60%;
     height: 70%;
-    .contact-info {
+    .contact__info {
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -25,8 +25,8 @@
       }
     }
 
-    .contact-form {
-      .form-flex {
+    .contact__form {
+      .contact__form-flex {
         display: flex;
         justify-content: space-between;
       }
@@ -42,8 +42,8 @@
         margin-bottom: 24px;
       }
 
-      .name,
-      .email {
+      .contact__form-name,
+      .contact__form-email {
         width: calc(50% - 8px);
         margin: 24px 0;
       }
@@ -53,11 +53,11 @@
         resize: none;
       }
 
-      .form-submit {
+      .contact__form-submit {
         width: 100%;
         text-align: right;
 
-        .send {
+        .contact__form-send {
           padding: 10px;
           border-radius: 5px;
           background: transparent;

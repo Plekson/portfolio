@@ -10,7 +10,7 @@ const Btn = ({ text, redirect }: BtnProps) => {
   return (
     <motion.a
       href={redirect}
-      className="contact-btn"
+      className="btn__contact-btn"
       whileHover={{ backgroundColor: "#BFA181", color: "#000" }}
     >
       {text}

@@ -5,23 +5,13 @@ import {
   fadeInNX500Variants,
   fadeInYVariants,
   opacityEffect,
-} from "../../variants.ts";
-
-const data = [
-  { id: 0, name: "React", icon: "react.svg" },
-  { id: 1, name: "Bootstrap", icon: "bootstrap.svg" },
-  { id: 2, name: "Tailwind", icon: "tailwind.svg" },
-  { id: 3, name: "Next.js", icon: "next-js.svg" },
-  { id: 4, name: "Node.js", icon: "node-js.svg" },
-  { id: 5, name: "Sass", icon: "sass.svg" },
-  { id: 6, name: "JavaScript", icon: "javascript.svg" },
-  { id: 7, name: "TypeScript", icon: "typescript.svg" },
-];
+} from "../../data/variants.ts";
+import { technologies } from "../../data/technologies.ts";
 
 const Skills = () => {
   return (
     <div className="about">
-      <div className="title">
+      <div className="about__title">
         <motion.h3
           initial="initial"
           whileInView="animate"
@@ -37,9 +27,9 @@ const Skills = () => {
         ></motion.div>
       </div>
 
-      <div className="description">
+      <div className="about__description">
         <motion.div
-          className="desc-text"
+          className="about__desc-text"
           initial="initial"
           whileInView="animate"
           variants={fadeInNX500Variants}
@@ -56,7 +46,7 @@ const Skills = () => {
           </motion.p>
         </motion.div>
 
-        <div className="desc-image">
+        <div className="about__desc-image">
           <motion.img
             src="laptop.png"
             alt="laptop"
@@ -67,7 +57,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="technologies">
+      <div className="about__technologies">
         <motion.h4
           initial="initial"
           whileInView="animate"
@@ -75,8 +65,8 @@ const Skills = () => {
         >
           Tech stack I use
         </motion.h4>
-        <div className="techstack">
-          {data.map((skill, index) => (
+        <div className="about__techstack">
+          {technologies.map((skill, index) => (
             <motion.div
               className="tech"
               key={skill.name}

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import "./Projects.scss";
-import { opacityEffect, fadeInX200Variants } from "../../variants";
+import { opacityEffect, fadeInX200Variants } from "../../data/variants";
 import HorizontalScrollCarousel from "./CardsGallery/CardsGallery";
 
 const Example = () => {
   return (
     <div className="projects" id="projects">
-      <div className="title-container">
+      <div className="projects__title">
         <motion.h3
           initial="initial"
           whileInView="animate"

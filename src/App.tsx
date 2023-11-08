@@ -5,6 +5,7 @@ import Navbar from "./assets/components/Navbar/Navbar";
 import Skills from "./assets/components/About/About";
 import Projects from "./assets/components/Projects/Projects";
 import Contact from "./assets/components/Contact/Contact";
+import Footer from "./assets/components/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <section>
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./Card.scss";
-import { scaleUp } from "../../../variants";
+import { scaleUp } from "../../../data/variants";
 import Btn from "../../Btn/Btn";
 
 type CardType = {
@@ -17,7 +17,7 @@ const Card = ({ card }: { card: CardType }) => {
       variants={scaleUp}
       whileHover="animate"
       initial="initial"
-      className="card-container"
+      className="card"
     >
       <div
         style={{
@@ -25,11 +25,11 @@ const Card = ({ card }: { card: CardType }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="card-background"
+        className="card__background"
       ></div>
-      <div className="card-content">
-        <p className="card-title">{card.title}</p>
-        <div className="card-buttons">
+      <div className="card__content">
+        <p className="card__title">{card.title}</p>
+        <div className="card__buttons">
           <Btn text="Source code" redirect={card.github} />
           <Btn text="Live preview" redirect={card.live} />
         </div>
