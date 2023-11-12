@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer__links">
         {linksImage.map((link) => (
-          <IconLink key={link.name} linkImage={link.image} />
+          <IconLink key={link.name} linkImage={link.image} url={link.url} />
         ))}
       </div>
       <div className="footer__copyright">
