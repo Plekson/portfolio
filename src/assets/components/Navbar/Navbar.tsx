@@ -8,7 +8,7 @@ const Navbar = () => {
       <span>Plekson</span>
       <div className="navbar__links">
         {linksImage.map((link) => (
-          <IconLink key={link.name} linkImage={link.image} />
+          <IconLink key={link.name} linkImage={link.image} url={link.url} />
         ))}
       </div>
     </div>
