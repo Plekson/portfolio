@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import "./Projects.scss";
 import { opacityEffect, fadeInX200Variants } from "../../data/variants";
-import HorizontalScrollCarousel from "./CardsGallery/CardsGallery";
+import HorizontalScrollGallery from "./HorizontalScrollGallery/HorizontalScrollGallery";
 
-const Example = () => {
+const Projects = () => {
   return (
     <div className="projects" id="projects">
       <div className="projects__title">
@@ -21,9 +21,9 @@ const Example = () => {
           ></motion.div>
         </motion.h3>
       </div>
-      <HorizontalScrollCarousel />
+      <HorizontalScrollGallery />
     </div>
   );
 };
 
-export default Example;
+export default Projects;

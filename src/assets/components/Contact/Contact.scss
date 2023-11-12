@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .contact {
   padding: 24px;
   max-width: 1366px;
@@ -15,6 +17,13 @@
     align-items: center;
     width: 60%;
     height: 70%;
+    gap: 20px;
+
+    @include tablet {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+    }
     .contact__info {
       display: flex;
       flex-direction: column;
@@ -22,6 +31,10 @@
 
       h4 {
         font-weight: normal;
+
+        @include mobile {
+          text-align: center;
+        }
       }
     }
 
@@ -40,6 +53,7 @@
         outline: none;
         border: 1px solid #bfa181;
         margin-bottom: 24px;
+        font-size: 20px;
       }
 
       .contact__form-name,

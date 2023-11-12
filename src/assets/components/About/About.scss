@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .about {
   padding: 24px;
   max-width: 1366px;
@@ -6,6 +8,8 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  height: 100vh;
+  justify-content: space-around;
 
   .about__description {
     display: flex;
@@ -17,6 +21,10 @@
       flex-direction: column;
       gap: 20px;
       padding: 20px;
+
+      @include smtablet {
+        width: 100%;
+      }
 
       span {
         color: #bfa181;
@@ -30,6 +38,10 @@
     .about__desc-image {
       width: 50%;
       text-align: right;
+
+      @include smtablet {
+        display: none;
+      }
 
       img {
         width: 75%;
@@ -47,6 +59,8 @@
     .about__techstack {
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
 
       .about__tech {
         text-align: center;

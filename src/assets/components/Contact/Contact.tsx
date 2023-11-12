@@ -3,14 +3,15 @@ import { motion } from "framer-motion";
 import {
   opacityEffect,
   fadeInX200Variants,
-  fadeInX500Variants,
-  fadeInNX500Variants,
+  fadeInNX200Variants,
 } from "../../data/variants";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
 const Contact = () => {
+  const isMobile = window.innerWidth <= 600;
+
   const form = useRef<HTMLFormElement>(null);
 
   const [formValues, setFormValues] = useState({
@@ -80,13 +81,13 @@ const Contact = () => {
           className="contact__form"
           ref={form}
           onSubmit={sendEmail}
-          initial="initial"
-          whileInView="animate"
-          variants={fadeInX500Variants}
+          initial={!isMobile ? "initial" : {}}
+          whileInView={!isMobile ? "animate" : {}}
+          variants={fadeInX200Variants}
         >
           <motion.div
             className="contact__form-flex"
-            variants={fadeInX500Variants}
+            variants={fadeInX200Variants}
           >
             <input
               type="text"
@@ -112,7 +113,7 @@ const Contact = () => {
           </motion.div>
 
           <motion.textarea
-            variants={fadeInX500Variants}
+            variants={fadeInX200Variants}
             name="message"
             id="text"
             cols={10}
@@ -134,15 +135,15 @@ const Contact = () => {
         </motion.form>
 
         <motion.div
-          className="contact__contact-info"
-          initial="initial"
-          whileInView="animate"
-          variants={fadeInNX500Variants}
+          className="contact__info"
+          initial={!isMobile ? "initial" : {}}
+          whileInView={!isMobile ? "animate" : {}}
+          variants={fadeInNX200Variants}
         >
-          <motion.h4 variants={fadeInNX500Variants}>Get in touch:</motion.h4>
-          <motion.div variants={fadeInNX500Variants}>
-            <motion.p variants={fadeInNX500Variants}>Piotr Lubecki</motion.p>
-            <motion.p variants={fadeInNX500Variants}>
+          <motion.h4 variants={fadeInNX200Variants}>Get in touch:</motion.h4>
+          <motion.div variants={fadeInNX200Variants}>
+            <motion.p variants={fadeInNX200Variants}>Piotr Lubecki</motion.p>
+            <motion.p variants={fadeInNX200Variants}>
               Email: pleksonlp@gmail.com
             </motion.p>
           </motion.div>

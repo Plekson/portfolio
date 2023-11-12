@@ -1,8 +1,8 @@
-.gallery {
+.horizontalScroll-gallery {
   position: relative;
   height: 300vh;
 
-  .gallery__sticky {
+  .horizontalScroll-gallery__sticky {
     position: sticky;
     top: 0;
     display: flex;
@@ -10,7 +10,7 @@
     overflow: hidden;
     height: 100vh;
 
-    .gallery__flex {
+    .horizontalScroll-gallery__flex {
       display: flex;
       gap: 24px;
     }

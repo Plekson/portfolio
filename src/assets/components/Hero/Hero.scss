@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .hero {
   max-width: 1366px;
   margin: 0 auto;
@@ -9,8 +11,16 @@
   justify-content: center;
   gap: 20px;
 
+  @include smtablet {
+    padding: 24px 24px 100px 24px;
+  }
+
   h2 {
     color: #bfa181;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   .hero__buttons {

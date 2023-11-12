@@ -13,23 +13,9 @@ export const fadeInYVariants = {
   }),
 };
 
-export const fadeInX200Variants = {
+export const fadeInNX200Variants = {
   initial: {
-    x: -200,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-
-export const fadeInNX500Variants = {
-  initial: {
-    x: -500,
+    x: -100,
     opacity: 0,
   },
 
@@ -43,9 +29,9 @@ export const fadeInNX500Variants = {
   },
 };
 
-export const fadeInX500Variants = {
+export const fadeInX200Variants = {
   initial: {
-    x: 500,
+    x: 100,
     opacity: 0,
   },
 
