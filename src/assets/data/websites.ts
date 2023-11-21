@@ -1,16 +1,16 @@
 export const websites = [
   {
     live: "#",
-    github: "#",
-    image: "web-bg.jpg",
-    title: "Title 1",
+    github: "https://github.com/Plekson/e-commerce-react",
+    image: "ecommerce.png",
+    title: "E-commerce",
     id: 1,
   },
   {
-    live: "#",
-    github: "#",
-    image: "web-bg.jpg",
-    title: "Title 2",
+    live: "https://plekson-mechanic.vercel.app/",
+    github: "https://github.com/Plekson/mechanic_landingpage",
+    image: "mechanic-lp.png",
+    title: "Car repair",
     id: 2,
   },
   {
