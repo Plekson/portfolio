@@ -3,13 +3,13 @@
 .card {
   position: relative;
   height: 450px;
-  width: 450px;
+  width: 800px;
   overflow: hidden;
   background-color: #ccc;
 
   @include mobile {
-    height: 350px;
-    width: 350px;
+    height: 225px;
+    width: 400px;
   }
 
   .card__background {
