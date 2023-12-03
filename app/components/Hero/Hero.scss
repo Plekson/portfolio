@@ -1,0 +1,30 @@
+@import "../../App.scss";
+
+.hero {
+  max-width: 1366px;
+  margin: 0 auto;
+  height: calc(100vh - 100px);
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @include smtablet {
+    padding: 24px 24px 100px 24px;
+  }
+
+  h2 {
+    color: #bfa181;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .hero__buttons {
+    display: flex;
+    gap: 20px;
+  }
+}

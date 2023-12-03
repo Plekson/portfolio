@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.navbar {
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  height: 100px;
+
+  @include tablet {
+    padding: 0 24px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .navbar__links {
+    display: flex;
+    gap: 20px;
+  }
+}
