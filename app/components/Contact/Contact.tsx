@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   opacityEffect,
@@ -12,7 +12,21 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
 const Contact = () => {
-  const isMobile = window.innerWidth <= 600;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+
+    handleResize(); // Set initial value
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const form = useRef<HTMLFormElement>(null);
 
